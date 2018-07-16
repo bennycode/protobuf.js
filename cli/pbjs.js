@@ -20,7 +20,7 @@ var targets  = util.requireAll("./targets");
  * @returns {number|undefined} Exit code, if known
  */
 exports.main = function main(args, callback) {
-    var lintDefault = "eslint-disable block-scoped-var, no-redeclare, no-control-regex, no-prototype-builtins";
+    var lintDefault = "block-scoped-var, id-length, no-redeclare, no-control-regex, no-magic-numbers, no-prototype-builtins, no-shadow, no-var, sort-vars";
     var argv = minimist(args, {
         alias: {
             target: "t",
